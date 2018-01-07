@@ -18,6 +18,14 @@
         left: 50%;
         margin-left: -200px;
       }
+      .touch{
+        text-align:center;
+        background-color:#EEEEEE;
+        padding:5px;
+      }
+      .bll{
+        height:350px;
+      }
     </style>
 
   </head>
@@ -29,12 +37,20 @@
       <div class="nav nav2">
       <canvas id="id-canvas" width="400" height="300" style="border:1px solid rgb(99,99,99)"></canvas>
       <p>
-        <button onclick="move2()">左------------左</button>
-        <button onclick="move3()">上------------上</button>
-        <button onclick="move4()">下------------下</button>
-        <button onclick="move1()">右------------右</button>
+        <button onclick="move2()">◀------------◀</button>
+        <button onclick="move3()">▲------------▲</button>
+        <button onclick="move4()">▼------------▼</button>
+        <button onclick="move1()">▶------------▶</button>
       </p>
       </div>
+    </div>
+    <div class="bll">
+    </div>
+    <div class="touch">
+      <p>
+      <a href="https://www.zhihu.com/people/luo-fei-53-21/activities">My zhihu</a>
+      <a href="https://t.me/joinchat/AAAAAEQpGSeu61nZz9VsTQ">My Telegram</a>
+      </p>
     </div>
     <script type="text/javascript">
     var canvas=document.getElementById("id-canvas");
