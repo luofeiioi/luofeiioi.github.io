@@ -2,21 +2,82 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>luof</title>
+    <title>Luof</title>
     <style media="screen">
       .header{
-        background-color:black;
+        background-color:#999999;
         color:white;
         text-align:center;
         padding:5px;
       }
+      .nav{
+        width:400px;
+        height:300px;
+        float:left;
+      }
+      .nac{
+        background-color:#FFFFFF;
+        height:300px;
+        width:100px;
+        float:left;
+      }
     </style>
+
   </head>
   <body>
     <div class="header">
       <h1>Luof</h1>
     </div>
+    <div class="nac">
 
     </div>
+    <div class="nav">
+      <canvas id="id-canvas" width="400" height="300" style="border:1px solid rgb(99,99,99)"></canvas>
+      <p>
+        <button onclick="move2()">左------------左</button>
+        <button onclick="move3()">上------------上</button>
+        <button onclick="move4()">下------------下</button>
+        <button onclick="move1()">右------------右</button>
+      </p>
+    </div>
+    <script type="text/javascript">
+    var canvas=document.getElementById("id-canvas");
+    var ad=canvas.getContext("2d");
+    var x=0;
+    var y=275;
+    ad.fillStyle = "rgb(255,255,255)";
+    ad.fillRect(x,y,75,25);
+
+    function move2()
+    {
+      display(10,0);
+    }
+    function move1()
+    {
+      display(-10,0);
+    }
+    function move3()
+    {
+      display(0,10);
+    }
+    function move4()
+    {
+      display(0,-10);
+    }
+   function display(num1,num2)
+   {
+     x-=num1;
+     y-=num2;
+     if(x<=-10||x>=335||y>=285||y<=-10)
+     {
+       x+=num1;
+       y+=num2;
+       return 0;
+     }
+     ad.fillStyle ="rgb("+ Math.floor(x*0.7) +","+ Math.floor(y*0.7) +",0)";
+     ad.clearRect((x+num1),(y+num2),75,25);
+     ad.fillRect(x,y,75,25);
+    }
+    </script>
   </body>
 </html>
