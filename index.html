@@ -11,15 +11,12 @@
         padding:5px;
       }
       .nav{
-        width:400px;
-        height:300px;
         float:left;
       }
-      .nac{
-        background-color:#FFFFFF;
-        height:300px;
-        width:100px;
-        float:left;
+      .nav2{
+        position: absolute;
+        left: 50%;
+        margin-left: -200px;
       }
     </style>
 
@@ -28,10 +25,8 @@
     <div class="header">
       <h1>Luof</h1>
     </div>
-    <div class="nac">
-
-    </div>
     <div class="nav">
+      <div class="nav nav2">
       <canvas id="id-canvas" width="400" height="300" style="border:1px solid rgb(99,99,99)"></canvas>
       <p>
         <button onclick="move2()">左------------左</button>
@@ -39,6 +34,7 @@
         <button onclick="move4()">下------------下</button>
         <button onclick="move1()">右------------右</button>
       </p>
+      </div>
     </div>
     <script type="text/javascript">
     var canvas=document.getElementById("id-canvas");
