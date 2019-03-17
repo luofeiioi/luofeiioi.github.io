@@ -1,0 +1,64 @@
+*{
+  margin: 0;
+}
+
+.mainHeader{
+  width:100%;
+  height: 75px;
+  background-color: yellow;
+}
+
+.headerIn{
+  width: 1000px;
+  height: 75px;
+  background-color: red;
+  margin:0 auto;
+}
+
+.mainSection{
+  width:100%;
+  height:800px;
+  background-color: blue;
+}
+
+.mainSectionIn{
+  display: flex;
+  width: 1000px;
+  background-color: #999999;
+  margin: 0 auto;
+  flex-wrap:wrap;
+}
+
+.mainSectionInOne{
+  width: 200px;
+  height: 400px;
+  background-color: #123456;
+  position: sticky;
+  top: 0;
+}
+
+.mainSectionInTwo{
+  width: 800px;
+  height: 700px;
+  background-color: #333333;
+}
+
+.mainSectionInTwoOne{
+  width: 800px;
+  height: 100px;
+  background-color: yellow;
+  overflow: hidden;
+}
+
+.mainSectionInTwoTwo{
+  width: 780px;
+  height: 80px;
+  background-color: blue;
+  margin:10px 10px;
+}
+
+.mainSectionInThree{
+  height: 100px;
+  width: 1000px;
+  background-color: red;
+}
